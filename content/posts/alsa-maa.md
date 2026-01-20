@@ -1,5 +1,5 @@
 ---
-date: '2026-01-20T22:19:41+08:00'
+date: '2026-01-18T22:19:41+08:00'
 draft: true
 title: '在 Ubuntu 24 NAS上用 ALAS + MAA + Redroid 挂机明日方舟'
 tags: ["NAS", "Arknights", "MAA", "Docker", "Linux", "Redroid"]
