@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Arknights on Hugo Site</title>
+    <link>http://localhost:1313/tags/arknights/</link>
+    <description>Recent content in Arknights on Hugo Site</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 20 Jan 2026 22:19:41 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/arknights/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Ubuntu 24 NAS上用 ALAS &#43; MAA &#43; Redroid 挂机明日方舟</title>
+      <link>http://localhost:1313/posts/alsa-maa/</link>
+      <pubDate>Tue, 20 Jan 2026 22:19:41 +0800</pubDate>
+      <guid>http://localhost:1313/posts/alsa-maa/</guid>
+      <description>&lt;p&gt;之前 Nas 上一直靠破解n卡的 vgpu 功能开 windows 虚拟机挂机明日方舟，最近沉迷视频编解码买了块 intel 的 a380,但是换成a380后好像不能搞 vgpu 了，只能想办法找找有没有 linux 下也可以完美挂机的方案，踩的一些坑总结如下。&lt;/p&gt;
+&lt;h2 id=&#34;硬件与系统环境&#34;&gt;硬件与系统环境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CPU&lt;/strong&gt;: AMD Ryzen 5800&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPU&lt;/strong&gt;: Intel Arc A380&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS&lt;/strong&gt;: Ubuntu 24.04 LTS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器管理&lt;/strong&gt;: Dockge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;关于系统的选择&lt;/strong&gt;：
+其他 Linux 发行版理论上都可以，redroid 的文档里面给了很多系统的使用方法。Debian 也行。但我推荐 Ubuntu，因为在处理 Redroid 的 &lt;code&gt;binder&lt;/code&gt; 设备绑定时，Ubuntu 比较省心。Debian 需要三个三个地绑定 binder devices，我不只一个游戏要挂机，就用的 Ubuntu。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;一redroid-容器配置&#34;&gt;一、Redroid 容器配置&lt;/h2&gt;
+&lt;p&gt;我选用的镜像是这个&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;镜像&lt;/strong&gt;: &lt;code&gt;erstt/redroid:11.0.0_ndk_magisk_litegapps_ChromeOS&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在我这个配置下只有这个镜像运行的不错，赛马娘台服也能跑，但是学马仕跑不了，运行明日方舟有奇怪的bug,启动的时候会黑屏卡住。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案&lt;/strong&gt;：
+完全靠运气或者手速。如果黑屏了，尝试按一下安卓的“任务栏键”，然后再点回游戏，有概率能刷出画面。一旦进入主界面，后续挂机就一切正常了。&lt;/p&gt;
+&lt;h2 id=&#34;二alas-与-maa-的部署准备&#34;&gt;二、ALAS 与 MAA 的部署准备&lt;/h2&gt;
+&lt;p&gt;我所有 Compose 文件都用 &lt;strong&gt;Dockge&lt;/strong&gt; 进行部署管理。选用 ALAS 不用 maa cli 的原因是我不会用，突然发现这个居然不仅有 web ui,还可以跑 maa 和 fgo 的脚本。项目地址是https://github.com/LmeSzinc/AzurLaneAutoScript&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

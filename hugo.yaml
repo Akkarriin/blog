@@ -1,0 +1,9 @@
+baseURL: https://anontokyo.de/
+languageCode: zh-cn
+title: Hugo Site
+theme: "PaperMod"
+
+params:
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
